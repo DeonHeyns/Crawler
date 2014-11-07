@@ -1,6 +1,7 @@
 from httplib2 import Http
 from urllib import urlencode
 import os
+import time
 
 homeAges = ["New",
             "1-3 Years",
@@ -327,3 +328,5 @@ for location in locations:
                         "California/{}/{}_{}_{}_{}.html".format(location, location, coverageType, age, coverageAmount),
                         "w") as text_file:
                     text_file.write(content)
+    time.sleep(5)
+time.sleep(5)
